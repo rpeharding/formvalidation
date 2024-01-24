@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script src="https://cdn.jsdelivr.net/npm/joi-browser@13.4.0/dist/joi-browser.min.js"></script>
+    <script type="module" src="entry.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="get" id="infoForm">
+      <div class="flex-column">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <p class="error" id="nameError"></p>
+      </div>
+      <div class="flex-column">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <p class="error" id="emailError"></p>
+      </div>
+      <div class="flex-column">
+        <label for="dateOfBirth">Date of Birth</label>
+        <input type="input" name="dateOfBirth" id="dateOfBirth" />
+        <p class="error" id="dateOfBirthError"></p>
+      </div>
+
+      <div class="flex-column">
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" id="phone" />
+        <p class="error" id="phoneError"></p>
+      </div>
+      <div class="flex-column">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <p class="error" id="passwordError"></p>
+      </div>
+    </form>
+  </body>
+</html>
